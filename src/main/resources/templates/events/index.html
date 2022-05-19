@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charsest="UTF-8"/>
+    <title></title>
+</head>
+<body>
+<h1>St. Louis Coding Events</h1>
+    <ol>
+        <th:block th:each="event: ${events}">
+            <li th:text="${event}"></li>
+        </th:block>
+    </ol>
+</body>
+</html>
